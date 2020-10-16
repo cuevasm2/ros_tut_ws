@@ -60,12 +60,21 @@ Visualization Manager:
       Collision Enabled: false
       Enabled: true
       Links:
-        All Links Enabled:
-          {}
+        All Links Enabled: true
         Expand Joint Details: false
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
+        back_left_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        back_right_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         base_link:
           Alpha: 1
           Show Axes: false
@@ -74,6 +83,17 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
+          Value: true
+        front_left_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_right_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
       Name: RobotModel
       Robot Description: robot_description
       TF Prefix: ""
@@ -85,10 +105,18 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: false
+        back_left_wheel_link:
+          Value: false
+        back_right_wheel_link:
+          Value: false
         base_link:
-          Value: true
+          Value: false
         body_link:
           Value: true
+        front_left_wheel_link:
+          Value: false
+        front_right_wheel_link:
+          Value: false
       Marker Scale: 1
       Name: TF
       Show Arrows: true
@@ -97,7 +125,14 @@ Visualization Manager:
       Tree:
         base_link:
           body_link:
-            {}
+            back_left_wheel_link:
+              {}
+            back_right_wheel_link:
+              {}
+            front_left_wheel_link:
+              {}
+            front_right_wheel_link:
+              {}
       Update Interval: 0
       Value: true
   Enabled: true
@@ -165,4 +200,4 @@ Window Geometry:
     collapsed: false
   Width: 1200
   X: 67
-  Y: 30
+  Y: 27
