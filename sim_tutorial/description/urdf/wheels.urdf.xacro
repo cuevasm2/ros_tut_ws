@@ -22,6 +22,12 @@
                     <mesh filename="package://description/urdf/meshes/cybertruck_${lr}_wheel.dae"/>
                 </geometry>
             </collision>
+
+            <!-- Inertials -->
+            <inertial>
+                <xacro:wheel_inertial m="${wheel_mass}" r="${wheel_radius}" h="${wheel_width}"/>
+            </inertial>
+
         </link>
 
         <!-- Wheel joint -->
